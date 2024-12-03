@@ -12,6 +12,14 @@ This repository contains implementations and explanations of fundamental **algor
 - **ArrayList**: A resizable array implementation that provides random access and dynamic resizing.
 - **Dynamic Array**: Similar to an ArrayList, allows dynamic resizing to accommodate data growth.
 - **Hash Tables**: A structure that maps keys to values efficiently using hashing.
+- **Graph**:
+  - **Adjacency Matrix**: A 2D matrix representing graph connections.
+  - **Adjacency Lists**: A list-based representation of graph edges.
+  - **Depth First Search (DFS)**: Explores as far as possible along each branch before backtracking.
+  - **Breadth First Search (BFS)**: Traverses nodes level by level in a graph.
+- **Tree Data Structures**:
+  - **Binary Search Trees (BST)**: Trees where each node's left child is smaller and the right child is larger.
+  - **Tree Traversal**: Techniques like in-order, pre-order, and post-order to visit tree nodes.
 
 ### **Algorithms**
 - **Big-O Notation**: Analysis of algorithm performance in terms of time and space complexity.
@@ -26,14 +34,6 @@ This repository contains implementations and explanations of fundamental **algor
   - **Linear Search**: Sequentially searches for a target in an array.
   - **Binary Search**: Efficiently finds an element in a sorted array by dividing the search interval in half.
   - **Interpolation Search**: Enhances binary search by predicting element location.
-- **Graph Algorithms**:
-  - **Adjacency Matrix**: A 2D matrix representing graph connections.
-  - **Adjacency Lists**: A list-based representation of graph edges.
-  - **Depth First Search (DFS)**: Explores as far as possible along each branch before backtracking.
-  - **Breadth First Search (BFS)**: Traverses nodes level by level in a graph.
-- **Tree Data Structures**:
-  - **Binary Search Trees (BST)**: Trees where each node's left child is smaller and the right child is larger.
-  - **Tree Traversal**: Techniques like in-order, pre-order, and post-order to visit tree nodes.
 - **Execution Time**: Practical analysis of code runtime for different algorithms.
 
 ---
