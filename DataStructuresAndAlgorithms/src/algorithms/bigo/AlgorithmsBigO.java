@@ -1,6 +1,6 @@
-package algorithms.bigO;
+package algorithms.bigo;
 
-import static java.io.ObjectInputFilter.merge;
+import static algorithms.mergesort.AlgorithmsMergeSort.merge;
 
 public class AlgorithmsBigO {
 	public static void main ( String[] args ) {
@@ -103,7 +103,7 @@ public class AlgorithmsBigO {
 		merge(left, right, lst);
 	}
 
-	private void merge ( int[] left , int[] right , int[] lst ) { }
+
 
 	//
 //O(2^n) : Exponential Time - Usually recursive algorithms that solves a problem of size N

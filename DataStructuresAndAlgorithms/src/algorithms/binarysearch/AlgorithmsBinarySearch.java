@@ -1,4 +1,4 @@
-package algorithms.binarySearch;
+package algorithms.binarysearch;
 
 
 public class AlgorithmsBinarySearch {
@@ -10,7 +10,7 @@ public class AlgorithmsBinarySearch {
 
 	public static void main ( String[] args ) {
 
-		int array[] = new int[ 1000000 ];
+		int[] array = new int[ 1000000 ];
 		int target = 789504;
 		for ( int i = 0 ; i < array.length ; i++ ) {
 			array[ i ] = i;

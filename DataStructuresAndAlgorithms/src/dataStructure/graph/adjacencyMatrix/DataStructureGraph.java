@@ -8,10 +8,12 @@ public class DataStructureGraph {
 
 	int[][] matrix;
 
-	DataStructureGraph ( int size ) {
+	public DataStructureGraph ( int size ) {
 		  nodes = new ArrayList<>();
 		matrix = new int[ size ][ size ];
 	}
+
+
 
 	public void addNode ( DataStructureNode node ) {
             nodes.add ( node );

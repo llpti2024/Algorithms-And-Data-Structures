@@ -1,4 +1,4 @@
-package algorithms.interpolationSearch;
+package algorithms.interpolationsearch;
 
 public class AlgorithmsInterpolationSearch {
 	//Interpolation Search = improvement over binary search best used for "uniformly” distributed data.

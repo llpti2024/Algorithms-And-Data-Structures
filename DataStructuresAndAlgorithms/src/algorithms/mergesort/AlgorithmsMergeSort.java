@@ -1,13 +1,13 @@
-package algorithms.mergeSort;
+package algorithms.mergesort;
 
 public class AlgorithmsMergeSort {
 
 	//
+	//   merge-sort = recursively divide array in 2, sort , re-combine
 	//
+	//  run-time complexity = O(n log n)
 	//
-	//
-	//
-	//
+	//   space complexity = O(n)
 	//
 	//
 

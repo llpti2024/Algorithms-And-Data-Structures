@@ -1,4 +1,4 @@
-package algorithms.quickSort;
+package algorithms.quicksort;
 
 //
 //  Quick sort = moves smaller elements to the left of a pivot

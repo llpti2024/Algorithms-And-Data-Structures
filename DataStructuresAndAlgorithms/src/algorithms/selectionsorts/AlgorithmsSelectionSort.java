@@ -1,4 +1,4 @@
-package algorithms.selectionSorts;
+package algorithms.selectionsorts;
 
 //    Selection Sort = search through an array and keep track of the minimum value during
 //                             each iteration. At the end of each iteration, we swap variables.
@@ -11,7 +11,7 @@ package algorithms.selectionSorts;
 public class AlgorithmsSelectionSort {
 	public static void main ( String[] args ) {
 
-		int array[] = { 9 , 1 , 8 , 2 , 7 , 3 , 6 , 4 , 5 };
+		int[] array = { 9 , 1 , 8 , 2 , 7 , 3 , 6 , 4 , 5 };
 
 		selectionSort ( array );
 
