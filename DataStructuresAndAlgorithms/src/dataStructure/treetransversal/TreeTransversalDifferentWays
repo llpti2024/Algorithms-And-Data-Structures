@@ -1,0 +1,67 @@
+==================================
+ STRUCTURE OF THE TREE NODE.
+==================================
+public class Node {
+	int data;
+	Node  left;
+	Node  right;
+
+	public Node ( int data ) {
+		this.data = data;
+	}
+}
+
+==================================
+
+
+============
+ORGANIZATION:
+============
+
+
+==================================
+								IN-ORDER
+==================================
+==================================
+						LEFT-ROOT-RIGHT
+==================================
+private void traverseTree ( Node root ) {
+
+		traverseTree ( root.left );
+		System.out.println (root.data );
+    	traverseTree ( root.right );
+ }
+
+ ==================================
+
+
+==================================
+			     		POST-ORDER
+==================================
+==================================
+	         		LEFT-RIGHT-ROOT
+==================================
+   private void traverseTree ( Node root ) {
+
+   		traverseTree ( root.left );
+       	traverseTree ( root.right );
+        System.out.println (root.data );
+    }
+
+==================================
+
+
+==================================
+							PRE-ORDER
+==================================
+==================================
+			        	ROOT-LEFT-RIGHT
+==================================
+ private void traverseTree ( Node root ) {
+
+        System.out.println (root.data );
+ 		traverseTree ( root.left );
+     	traverseTree ( root.right );
+  }
+
+==================================
