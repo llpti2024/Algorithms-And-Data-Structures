@@ -1,6 +1,6 @@
 package algorithms.bigo;
 
-import static algorithms.mergesort.AlgorithmsMergeSort.merge;
+
 
 public class AlgorithmsBigO {
 	public static void main ( String[] args ) {
@@ -100,7 +100,7 @@ public class AlgorithmsBigO {
 		}
 		merge_sort(left);
 		merge_sort(right);
-		merge(left, right, lst);
+		//merge(left, right, lst);
 	}
 
 

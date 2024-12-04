@@ -16,7 +16,8 @@ public class DataStructureGraph {
 
 
 	public void addNode ( DataStructureNode node ) {
-            nodes.add ( node );
+
+		nodes.add ( node );
 	}
 
 
