@@ -3,12 +3,17 @@ package dataStructure.graph.depthFirstSearch;
 
 public class DataStructureGraphDepthFirstSearch {
 	//
-	//   DFS = Depth First Search
-	//               a search algorithm for traversing a tree, or a graph data structure.
-	//               Pick a route, keep going.
-	//                If you reach a dead end, or an already visited node,
-	//                backtrack to a previous node with unvisited adjacent neighbors.
+	//   DFS =  Depth First Search
+	//                      a search algorithm for traversing a tree, or a graph data structure.
+	//                      Pick a route, keep going.
+	//                       If you reach a dead end, or an already visited node,
+	//                       backtrack to a previous node with unvisited adjacent neighbors.
 	//
+	//  Depth FS = Traverse a graph branch by branch
+	//                    Utilizes a Stack
+	//                     Better if destination is on average far from the start
+	//                     Children are visited before siblings
+	//                     More popular for games/puzzles.
 	//
 
 	public static void main ( String[] args ) {
