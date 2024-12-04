@@ -55,7 +55,7 @@ public class AlgorithmsBigO {
 		return n * ( n + 1 ) / 2;
 	}
 	//O(1) : Constant Time - No Loops
-	public void print_first_element(int[] lst) {
+	public void choosePrint ( int[] lst ) {
 		System.out.println(lst[0]);
 	}
 
@@ -85,9 +85,9 @@ public class AlgorithmsBigO {
 	//
 	//   O(n log n) : Log Linear Time - Usually sorting operations
 	//
-	public void merge_sort(int[] lst) {
+	public int[] merge_sort(int[] lst) {
 		if (lst.length < 2) {
-			return;
+			return lst;
 		}
 		int mid = lst.length / 2;
 		int[] left = new int[mid];
@@ -98,35 +98,54 @@ public class AlgorithmsBigO {
 		for (int i = mid; i < lst.length; i++) {
 			right[i - mid] = lst[i];
 		}
-		merge_sort(left);
-		merge_sort(right);
-		//merge(left, right, lst);
+		left = merge_sort(left);
+		right = merge_sort(right);
+		return merge(left, right);
 	}
 
+	public int[] merge(int[] left, int[] right) {
+		int[] result = new int[ left.length + right.length ];
+		int i = 0, j = 0, k = 0;
+		while ( i < left.length && j < right.length ) {
+			if ( left[ i ] <= right[ j ] ) {
+				result[ k++ ] = left[ i++ ];
+			}
+			else {
+				result[ k++ ] = right[ j++ ];
+			}
+		}
+		while ( i < left.length ) {
+			result[ k++ ] = left[ i++ ];
+		}
+		while ( j < right.length ) {
+			result[ k++ ] = right[ j++ ];
+		}
+		return result;
+	}
 
 
 	//
 //O(2^n) : Exponential Time - Usually recursive algorithms that solves a problem of size N
 //
-public int fibonacci(int n) {
-	if (n == 0) {
-		return 0;
-	} else if (n == 1) {
-		return 1;
-	} else {
-		return fibonacci(n - 1) + fibonacci(n - 2);
-	}
-}
+		public int fibonacci(int n) {
+			if (n == 0) {
+				return 0;
+			} else if (n == 1) {
+				return 1;
+			} else {
+				return fibonacci(n - 1) + fibonacci(n - 2);
+			}
+		}
 
- //
+		//
 //O(n!) : Factorial Time - Usually recursive algorithms that solves a problem of size N
 //
- public int permutation(int[] lst, int k) {
-	 if (k == 1) {
-		 return 1;
-	 } else {
-		 return k * permutation(lst, k - 1);
-	 }
- }
+		public int permutation(int[] lst, int k) {
+			if (k == 1) {
+				return 1;
+			} else {
+				return k * permutation(lst, k - 1);
+			}
+		}
 
 }
